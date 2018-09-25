@@ -1,0 +1,805 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Release" increment="1537860507000">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Apache License, Version 2.0"/>
+      <attribute name="osgi.identity" value="net.powermatcher.examples"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.0.1.repoOIST-SNAPSHOT-201809250726" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809250726" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="net.powermatcher.examples"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809250726" type="Version"/>
+      <attribute name="osgi.wiring.host" value="net.powermatcher.examples"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" value="net.powermatcher.api.AgentEndpoint,net.powermatcher.api.monitoring.ObservableAgent" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" value="net.powermatcher.api.monitoring.AgentObserver" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="25469" type="Long"/>
+      <attribute name="url" value="net.powermatcher.examples/net.powermatcher.examples-2.0.1.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="7C6AE078F77C7B4E7CA25A261488194B03E74E3D8CFE61A6D5A46EF6BE449769"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.measure)(&amp;(version&gt;=5.0.0)(!(version&gt;=6.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.measure.unit)(&amp;(version&gt;=5.0.0)(!(version&gt;=6.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.data)(&amp;(version&gt;=3.0.0)(!(version&gt;=4.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.messages)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.monitoring)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.monitoring.events)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.core)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.flexiblepower.context)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(&amp;(version&gt;=1.7.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.service">
+      <directive name="filter" value="(objectClass=net.powermatcher.api.monitoring.ObservableAgent)"/>
+      <directive name="effective" value="active"/>
+      <directive name="resolution" value="optional"/>
+      <directive name="cardinality" value="multiple"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Apache License, Version 2.0"/>
+      <attribute name="osgi.identity" value="net.powermatcher.peakshaving"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.0.1.repoOIST-SNAPSHOT-201809250727" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809250727" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="net.powermatcher.peakshaving"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809250727" type="Version"/>
+      <attribute name="osgi.wiring.host" value="net.powermatcher.peakshaving"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" value="javax.servlet.Servlet" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" value="net.powermatcher.api.AgentEndpoint,net.powermatcher.api.MatcherEndpoint,net.powermatcher.api.monitoring.ObservableAgent,net.powermatcher.core.concentrator.TransformingConcentrator,net.powermatcher.peakshaving.PeakShavingConcentrator" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="20858" type="Long"/>
+      <attribute name="url" value="net.powermatcher.peakshaving/net.powermatcher.peakshaving-2.0.1.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="08A1184EE78A553E221638C8DB50D2011A16260F429B0D20E51B2F0090B92AD2"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.servlet)(&amp;(version&gt;=2.6.0)(!(version&gt;=3.0.0))))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.servlet.http)(&amp;(version&gt;=2.6.0)(!(version&gt;=3.0.0))))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.gson)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.gson.reflect)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.measure)(&amp;(version&gt;=5.0.0)(!(version&gt;=6.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.measure.quantity)(&amp;(version&gt;=5.0.0)(!(version&gt;=6.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.measure.unit)(&amp;(version&gt;=5.0.0)(!(version&gt;=6.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.data)(&amp;(version&gt;=3.0.0)(!(version&gt;=4.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.monitoring)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.core.bidcache)(&amp;(version&gt;=3.0.0)(!(version&gt;=4.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.core.concentrator)(&amp;(version&gt;=2.1.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(&amp;(version&gt;=1.7.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.service">
+      <directive name="filter" value="(objectClass=net.powermatcher.core.concentrator.TransformingConcentrator)"/>
+      <directive name="effective" value="active"/>
+      <directive name="cardinality" value="multiple"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Apache License, Version 2.0"/>
+      <attribute name="osgi.identity" value="net.powermatcher.api"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="3.0.0.repoOIST-SNAPSHOT-201809250726" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="3.0.0.repoOIST-SNAPSHOT-201809250726" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="net.powermatcher.api"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="3.0.0.repoOIST-SNAPSHOT-201809250726" type="Version"/>
+      <attribute name="osgi.wiring.host" value="net.powermatcher.api"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="net.powermatcher.api.data,net.powermatcher.api.messages,org.flexiblepower.context"/>
+      <attribute name="version" value="2.0.0.201809250726" type="Version"/>
+      <attribute name="osgi.wiring.package" value="net.powermatcher.api"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="version" value="3.0.0.201809250726" type="Version"/>
+      <attribute name="osgi.wiring.package" value="net.powermatcher.api.data"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="net.powermatcher.api.data"/>
+      <attribute name="version" value="2.0.0.201809250726" type="Version"/>
+      <attribute name="osgi.wiring.package" value="net.powermatcher.api.messages"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="net.powermatcher.api,net.powermatcher.api.monitoring.events"/>
+      <attribute name="version" value="2.0.0.201809250726" type="Version"/>
+      <attribute name="osgi.wiring.package" value="net.powermatcher.api.monitoring"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="net.powermatcher.api.data,net.powermatcher.api.messages"/>
+      <attribute name="version" value="2.0.0.201809250726" type="Version"/>
+      <attribute name="osgi.wiring.package" value="net.powermatcher.api.monitoring.events"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="55007" type="Long"/>
+      <attribute name="url" value="net.powermatcher.api/net.powermatcher.api-3.0.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="E7A11020A2F13AC07F04D0A1A1FFB446CF793B8B085D15CBBE757381FF023533"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.flexiblepower.context)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Apache License, Version 2.0"/>
+      <attribute name="osgi.identity" value="net.powermatcher.remote.websockets.client"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.0.1.repoOIST-SNAPSHOT-201809250727" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809250727" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="net.powermatcher.remote.websockets.client"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809250727" type="Version"/>
+      <attribute name="osgi.wiring.host" value="net.powermatcher.remote.websockets.client"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" value="net.powermatcher.api.monitoring.ObservableAgent" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="35875" type="Long"/>
+      <attribute name="url" value="net.powermatcher.remote.websockets.client/net.powermatcher.remote.websockets.client-2.0.1.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="238121FD6A4D9ACB9F00205990B726032648DBB307FDB45B0423851D5B8C0252"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.gson)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.data)(&amp;(version&gt;=3.0.0)(!(version&gt;=4.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.messages)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.monitoring)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.core)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.core.bidcache)(&amp;(version&gt;=3.0.0)(!(version&gt;=4.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.core.concentrator)(&amp;(version&gt;=2.1.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.util.ssl)(&amp;(version&gt;=9.4.0)(!(version&gt;=10.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.websocket.api)(&amp;(version&gt;=9.4.0)(!(version&gt;=10.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.websocket.api.annotations)(&amp;(version&gt;=9.4.0)(!(version&gt;=10.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.websocket.client)(&amp;(version&gt;=9.4.0)(!(version&gt;=10.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(&amp;(version&gt;=1.8.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(&amp;(version&gt;=1.7.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Apache License, Version 2.0"/>
+      <attribute name="osgi.identity" value="net.powermatcher.test"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.0.0.repoOIST-SNAPSHOT-201809250727" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.0.0.repoOIST-SNAPSHOT-201809250727" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="net.powermatcher.test"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.0.0.repoOIST-SNAPSHOT-201809250727" type="Version"/>
+      <attribute name="osgi.wiring.host" value="net.powermatcher.test"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="906" type="Long"/>
+      <attribute name="url" value="net.powermatcher.test/net.powermatcher.test-2.0.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="AF876F25586BB0EF2BA5566176E4497B5F029319A25E5542205BB2CFA66A02FF"/>
+    </capability>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Apache License, Version 2.0"/>
+      <attribute name="osgi.identity" value="net.powermatcher.test.helpers"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.0.0.repoOIST-SNAPSHOT-201809250726" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.0.0.repoOIST-SNAPSHOT-201809250726" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="net.powermatcher.test.helpers"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.0.0.repoOIST-SNAPSHOT-201809250726" type="Version"/>
+      <attribute name="osgi.wiring.host" value="net.powermatcher.test.helpers"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.measure,javax.measure.quantity,net.powermatcher.api,net.powermatcher.api.data,net.powermatcher.api.messages,net.powermatcher.api.monitoring,net.powermatcher.api.monitoring.events,org.flexiblepower.context"/>
+      <attribute name="version" value="2.0.0.201809250726" type="Version"/>
+      <attribute name="osgi.wiring.package" value="net.powermatcher.mock"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="net.powermatcher.api,net.powermatcher.api.data,net.powermatcher.api.messages,net.powermatcher.api.monitoring,net.powermatcher.api.monitoring.events,net.powermatcher.mock"/>
+      <attribute name="version" value="2.0.0.201809250726" type="Version"/>
+      <attribute name="osgi.wiring.package" value="net.powermatcher.test.helpers"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" value="net.powermatcher.api.monitoring.AgentObserver" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="35149" type="Long"/>
+      <attribute name="url" value="net.powermatcher.test.helpers/net.powermatcher.test.helpers-1.0.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="2D655F42E5F749E2DA25254F5097CEA57C3AA8F0B57750FA174273BDBEE986D8"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.measure)(&amp;(version&gt;=5.0.0)(!(version&gt;=6.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.measure.quantity)(&amp;(version&gt;=5.0.0)(!(version&gt;=6.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.measure.unit)(&amp;(version&gt;=5.0.0)(!(version&gt;=6.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.data)(&amp;(version&gt;=3.0.0)(!(version&gt;=4.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.messages)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.monitoring)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.monitoring.events)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.mock)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.flexiblepower.context)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(&amp;(version&gt;=1.7.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.service">
+      <directive name="filter" value="(objectClass=net.powermatcher.api.monitoring.ObservableAgent)"/>
+      <directive name="effective" value="active"/>
+      <directive name="resolution" value="optional"/>
+      <directive name="cardinality" value="multiple"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Apache License, Version 2.0"/>
+      <attribute name="osgi.identity" value="net.powermatcher.monitoring.csv"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.0.2.repoOIST-SNAPSHOT-201809250726" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.0.2.repoOIST-SNAPSHOT-201809250726" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="net.powermatcher.monitoring.csv"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.0.2.repoOIST-SNAPSHOT-201809250726" type="Version"/>
+      <attribute name="osgi.wiring.host" value="net.powermatcher.monitoring.csv"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="28806" type="Long"/>
+      <attribute name="url" value="net.powermatcher.monitoring.csv/net.powermatcher.monitoring.csv-2.0.2.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="44110289F699539D715A13AA0A827933490D8DEE390BAD37594E4FBC9BAB279B"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.data)(&amp;(version&gt;=3.0.0)(!(version&gt;=4.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.messages)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.monitoring)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.monitoring.events)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(&amp;(version&gt;=1.7.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.service">
+      <directive name="filter" value="(objectClass=net.powermatcher.api.monitoring.ObservableAgent)"/>
+      <directive name="effective" value="active"/>
+      <directive name="resolution" value="optional"/>
+      <directive name="cardinality" value="multiple"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Apache License, Version 2.0"/>
+      <attribute name="osgi.identity" value="net.powermatcher.runtime"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.0.1.repoOIST-SNAPSHOT-201809250727" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809250727" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="net.powermatcher.runtime"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809250727" type="Version"/>
+      <attribute name="osgi.wiring.host" value="net.powermatcher.runtime"/>
+    </capability>
+    <capability namespace="flexiblepower.context">
+      <attribute name="runtime" value="powermatcher"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="21490" type="Long"/>
+      <attribute name="url" value="net.powermatcher.runtime/net.powermatcher.runtime-2.0.1.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="4ACAD1559626B677685C723716D55C540C8BA3DD2CDFA3C357619467CA4CA8BE"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.measure)(&amp;(version&gt;=5.0.0)(!(version&gt;=6.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.measure.quantity)(&amp;(version&gt;=5.0.0)(!(version&gt;=6.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.measure.unit)(&amp;(version&gt;=5.0.0)(!(version&gt;=6.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.data)(&amp;(version&gt;=3.0.0)(!(version&gt;=4.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.messages)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.flexiblepower.context)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(&amp;(version&gt;=1.7.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.service">
+      <directive name="filter" value="(objectClass=net.powermatcher.api.AgentEndpoint)"/>
+      <directive name="effective" value="active"/>
+      <directive name="resolution" value="optional"/>
+      <directive name="cardinality" value="multiple"/>
+    </requirement>
+    <requirement namespace="osgi.service">
+      <directive name="filter" value="(objectClass=net.powermatcher.api.MatcherEndpoint)"/>
+      <directive name="effective" value="active"/>
+      <directive name="resolution" value="optional"/>
+      <directive name="cardinality" value="multiple"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Apache License, Version 2.0"/>
+      <attribute name="osgi.identity" value="net.powermatcher.core"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="3.0.0.repoOIST-SNAPSHOT-201809250726" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="3.0.0.repoOIST-SNAPSHOT-201809250726" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="net.powermatcher.core"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="3.0.0.repoOIST-SNAPSHOT-201809250726" type="Version"/>
+      <attribute name="osgi.wiring.host" value="net.powermatcher.core"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="net.powermatcher.api,net.powermatcher.api.data,net.powermatcher.api.messages,net.powermatcher.api.monitoring,net.powermatcher.api.monitoring.events,net.powermatcher.core.bidcache,org.flexiblepower.context,org.slf4j"/>
+      <attribute name="version" value="2.0.0.201809250726" type="Version"/>
+      <attribute name="osgi.wiring.package" value="net.powermatcher.core"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="net.powermatcher.api,net.powermatcher.core,net.powermatcher.core.bidcache"/>
+      <attribute name="version" value="2.0.0.201809250726" type="Version"/>
+      <attribute name="osgi.wiring.package" value="net.powermatcher.core.auctioneer"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="net.powermatcher.api.data,net.powermatcher.api.messages"/>
+      <attribute name="version" value="3.0.0.201809250726" type="Version"/>
+      <attribute name="osgi.wiring.package" value="net.powermatcher.core.bidcache"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.measure,javax.measure.quantity,net.powermatcher.api,net.powermatcher.api.data,net.powermatcher.api.messages,net.powermatcher.api.monitoring,net.powermatcher.core,net.powermatcher.core.bidcache,org.flexiblepower.context"/>
+      <attribute name="version" value="2.1.0.201809250726" type="Version"/>
+      <attribute name="osgi.wiring.package" value="net.powermatcher.core.concentrator"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="version" value="3.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="net.powermatcher.core.proxy"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" value="net.powermatcher.api.AgentEndpoint,net.powermatcher.api.MatcherEndpoint,net.powermatcher.api.monitoring.ObservableAgent" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" value="net.powermatcher.api.MatcherEndpoint,net.powermatcher.api.monitoring.ObservableAgent" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="52217" type="Long"/>
+      <attribute name="url" value="net.powermatcher.core/net.powermatcher.core-3.0.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="5EB2350A5D96A7640632C76DEF1D3617D1F8FE3CB90EC72A28706B16716068A3"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.measure)(&amp;(version&gt;=5.0.0)(!(version&gt;=6.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.measure.quantity)(&amp;(version&gt;=5.0.0)(!(version&gt;=6.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.measure.unit)(&amp;(version&gt;=5.0.0)(!(version&gt;=6.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.data)(&amp;(version&gt;=3.0.0)(!(version&gt;=4.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.messages)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.monitoring)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.monitoring.events)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.flexiblepower.context)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(&amp;(version&gt;=1.7.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="flexiblepower.context">
+      <directive name="filter" value="(runtime=powermatcher)"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Apache License, Version 2.0"/>
+      <attribute name="osgi.identity" value="net.powermatcher.visualisation"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.0.1.repoOIST-SNAPSHOT-201809250728" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809250728" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="net.powermatcher.visualisation"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809250728" type="Version"/>
+      <attribute name="osgi.wiring.host" value="net.powermatcher.visualisation"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" value="javax.servlet.Servlet" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="162564" type="Long"/>
+      <attribute name="url" value="net.powermatcher.visualisation/net.powermatcher.visualisation-2.0.1.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="77AC98064D66F9711DA8A91774D415A4D272080A0D69F06DFA533CF66B3C229A"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.gson)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.servlet)(&amp;(version&gt;=2.6.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.servlet.http)(&amp;(version&gt;=2.6.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.io)(&amp;(version&gt;=1.4.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(&amp;(version&gt;=1.8.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.cm)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(&amp;(version&gt;=1.7.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.service">
+      <directive name="filter" value="(objectClass=org.osgi.service.cm.ConfigurationAdmin)"/>
+      <directive name="effective" value="active"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Apache License, Version 2.0"/>
+      <attribute name="osgi.identity" value="net.powermatcher.remote.websockets.server"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.1.0.repoOIST-SNAPSHOT-201809250727" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.1.0.repoOIST-SNAPSHOT-201809250727" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="net.powermatcher.remote.websockets.server"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.1.0.repoOIST-SNAPSHOT-201809250727" type="Version"/>
+      <attribute name="osgi.wiring.host" value="net.powermatcher.remote.websockets.server"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.servlet,net.powermatcher.api,net.powermatcher.api.messages,net.powermatcher.core,org.eclipse.jetty.websocket.api,org.eclipse.jetty.websocket.servlet,org.osgi.framework"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="net.powermatcher.remote.websockets.server"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="net.powermatcher.remote.websockets.data"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.google.gson,net.powermatcher.api.data,net.powermatcher.api.messages,net.powermatcher.remote.websockets.data"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="net.powermatcher.remote.websockets.json"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <attribute name="objectClass" value="javax.servlet.Servlet" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="35985" type="Long"/>
+      <attribute name="url" value="net.powermatcher.remote.websockets.server/net.powermatcher.remote.websockets.server-2.1.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="548D21B4132BD642BFE166FD0864DB7235A0F51B42BBC6684DBC5020567CFB7E"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.gson)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.servlet)(&amp;(version&gt;=2.6.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.data)(&amp;(version&gt;=3.0.0)(!(version&gt;=4.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.messages)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.monitoring)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.monitoring.events)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.core)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.websocket.api)(&amp;(version&gt;=9.4.0)(!(version&gt;=10.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.jetty.websocket.servlet)(&amp;(version&gt;=9.4.0)(!(version&gt;=10.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(&amp;(version&gt;=1.8.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(&amp;(version&gt;=1.7.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Apache License, Version 2.0"/>
+      <attribute name="osgi.identity" value="net.powermatcher.test.osgi"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.0.0.repoOIST-SNAPSHOT-201809250727" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.0.0.repoOIST-SNAPSHOT-201809250727" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="net.powermatcher.test.osgi"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.0.0.repoOIST-SNAPSHOT-201809250727" type="Version"/>
+      <attribute name="osgi.wiring.host" value="net.powermatcher.test.osgi"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="30681" type="Long"/>
+      <attribute name="url" value="net.powermatcher.test.osgi/net.powermatcher.test.osgi-2.0.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="8C8AE8C15C852E80BDBCA3D89A0706D96C3CD7C8F0FDE31FE234628C2CAEC74C"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=junit.framework)(&amp;(version&gt;=3.8.0)(!(version&gt;=4.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.data)(&amp;(version&gt;=3.0.0)(!(version&gt;=4.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.messages)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.core)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.core.auctioneer)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.core.bidcache)(&amp;(version&gt;=3.0.0)(!(version&gt;=4.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.core.concentrator)(&amp;(version&gt;=2.1.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.test.helpers)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.flexiblepower.context)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.junit)(&amp;(version&gt;=4.12.0)(!(version&gt;=5.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(&amp;(version&gt;=1.8.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.cm)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.runtime)(&amp;(version&gt;=1.3.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.runtime.dto)(&amp;(version&gt;=1.3.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.promise)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(&amp;(version&gt;=1.7.0)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+</repository>
