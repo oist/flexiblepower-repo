@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Release" increment="1537875281000">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Release" increment="1537881920000">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="license" value="Apache License, Version 2.0"/>
       <attribute name="osgi.identity" value="net.powermatcher.examples"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="2.0.1.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="version" value="2.0.1.repoOIST-SNAPSHOT-201809251321" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809251321" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="net.powermatcher.examples"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809251321" type="Version"/>
       <attribute name="osgi.wiring.host" value="net.powermatcher.examples"/>
     </capability>
     <capability namespace="osgi.service">
@@ -22,10 +22,10 @@
       <attribute name="objectClass" value="net.powermatcher.api.monitoring.AgentObserver" type="List&lt;String&gt;"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="25513" type="Long"/>
+      <attribute name="size" value="25466" type="Long"/>
       <attribute name="url" value="net.powermatcher.examples/net.powermatcher.examples-2.0.1.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="773FA755F7BC16046F5810C24167789F5AAAA7B32F77DF5A0E146DAE674422B5"/>
+      <attribute name="osgi.content" value="0B588703B4740FF2BD5107E7DE54C44017394BF3E0A134A765996EC90E6BB688"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=javax.measure)(&amp;(version&gt;=5.0.0)(!(version&gt;=6.0.0))))"/>
@@ -75,14 +75,14 @@
       <attribute name="license" value="Apache License, Version 2.0"/>
       <attribute name="osgi.identity" value="net.powermatcher.peakshaving"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="2.0.1.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="version" value="2.0.1.repoOIST-SNAPSHOT-201809251321" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809251321" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="net.powermatcher.peakshaving"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809251321" type="Version"/>
       <attribute name="osgi.wiring.host" value="net.powermatcher.peakshaving"/>
     </capability>
     <capability namespace="osgi.service">
@@ -92,10 +92,10 @@
       <attribute name="objectClass" value="net.powermatcher.api.AgentEndpoint,net.powermatcher.api.MatcherEndpoint,net.powermatcher.api.monitoring.ObservableAgent,net.powermatcher.core.concentrator.TransformingConcentrator,net.powermatcher.peakshaving.PeakShavingConcentrator" type="List&lt;String&gt;"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="20889" type="Long"/>
+      <attribute name="size" value="20852" type="Long"/>
       <attribute name="url" value="net.powermatcher.peakshaving/net.powermatcher.peakshaving-2.0.1.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="9BD951B46BA0A1EFAB933562A044819471084636DBC7689C70FB53F45DAE4560"/>
+      <attribute name="osgi.content" value="6C9C66FD12C8F6CD1AA7896E096200AF7BCD6892271EB66F20C20D9B934805C7"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=javax.servlet)(&amp;(version&gt;=2.6.0)(!(version&gt;=3.0.0))))"/>
@@ -157,45 +157,45 @@
       <attribute name="license" value="Apache License, Version 2.0"/>
       <attribute name="osgi.identity" value="net.powermatcher.api"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="3.0.0.repoOIST-SNAPSHOT-201809250907" type="Version"/>
+      <attribute name="version" value="3.0.0.repoOIST-SNAPSHOT-201809251320" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="3.0.0.repoOIST-SNAPSHOT-201809250907" type="Version"/>
+      <attribute name="bundle-version" value="3.0.0.repoOIST-SNAPSHOT-201809251320" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="net.powermatcher.api"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="3.0.0.repoOIST-SNAPSHOT-201809250907" type="Version"/>
+      <attribute name="bundle-version" value="3.0.0.repoOIST-SNAPSHOT-201809251320" type="Version"/>
       <attribute name="osgi.wiring.host" value="net.powermatcher.api"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <directive name="uses" value="net.powermatcher.api.data,net.powermatcher.api.messages,org.flexiblepower.context"/>
-      <attribute name="version" value="2.0.0.201809250907" type="Version"/>
+      <attribute name="version" value="2.0.0.201809251320" type="Version"/>
       <attribute name="osgi.wiring.package" value="net.powermatcher.api"/>
     </capability>
     <capability namespace="osgi.wiring.package">
-      <attribute name="version" value="3.0.0.201809250907" type="Version"/>
+      <attribute name="version" value="3.0.0.201809251320" type="Version"/>
       <attribute name="osgi.wiring.package" value="net.powermatcher.api.data"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <directive name="uses" value="net.powermatcher.api.data"/>
-      <attribute name="version" value="2.0.0.201809250907" type="Version"/>
+      <attribute name="version" value="2.0.0.201809251320" type="Version"/>
       <attribute name="osgi.wiring.package" value="net.powermatcher.api.messages"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <directive name="uses" value="net.powermatcher.api,net.powermatcher.api.monitoring.events"/>
-      <attribute name="version" value="2.0.0.201809250907" type="Version"/>
+      <attribute name="version" value="2.0.0.201809251320" type="Version"/>
       <attribute name="osgi.wiring.package" value="net.powermatcher.api.monitoring"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <directive name="uses" value="net.powermatcher.api.data,net.powermatcher.api.messages"/>
-      <attribute name="version" value="2.0.0.201809250907" type="Version"/>
+      <attribute name="version" value="2.0.0.201809251320" type="Version"/>
       <attribute name="osgi.wiring.package" value="net.powermatcher.api.monitoring.events"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="55361" type="Long"/>
+      <attribute name="size" value="55006" type="Long"/>
       <attribute name="url" value="net.powermatcher.api/net.powermatcher.api-3.0.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="5C486BD3F8AFC6AAFF1052F4AEDD45744CAF5F3EF020AE3746A48A7E04363057"/>
+      <attribute name="osgi.content" value="6179335AFFFB92BA5E96A953D9891D21806EC2D356321E139CCB20458E8E42DF"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.flexiblepower.context)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))"/>
@@ -209,24 +209,24 @@
       <attribute name="license" value="Apache License, Version 2.0"/>
       <attribute name="osgi.identity" value="net.powermatcher.remote.websockets.client"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="2.0.1.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="version" value="2.0.1.repoOIST-SNAPSHOT-201809251321" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809251321" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="net.powermatcher.remote.websockets.client"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809251321" type="Version"/>
       <attribute name="osgi.wiring.host" value="net.powermatcher.remote.websockets.client"/>
     </capability>
     <capability namespace="osgi.service">
       <attribute name="objectClass" value="net.powermatcher.api.monitoring.ObservableAgent" type="List&lt;String&gt;"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="36063" type="Long"/>
+      <attribute name="size" value="35874" type="Long"/>
       <attribute name="url" value="net.powermatcher.remote.websockets.client/net.powermatcher.remote.websockets.client-2.0.1.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="21CD548F991066E12EA24FF4CC6A20F07B4ADB206AF1F947171B5E6625FE8E58"/>
+      <attribute name="osgi.content" value="A62C7CB294C1748791F200C71CD07B1A68D121CD51942DC1D2317D8E6FB94BD4"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.gson)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))"/>
@@ -282,21 +282,21 @@
       <attribute name="license" value="Apache License, Version 2.0"/>
       <attribute name="osgi.identity" value="net.powermatcher.test"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="2.0.0.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="version" value="2.0.0.repoOIST-SNAPSHOT-201809251321" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="2.0.0.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="bundle-version" value="2.0.0.repoOIST-SNAPSHOT-201809251321" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="net.powermatcher.test"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="2.0.0.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="bundle-version" value="2.0.0.repoOIST-SNAPSHOT-201809251321" type="Version"/>
       <attribute name="osgi.wiring.host" value="net.powermatcher.test"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="904" type="Long"/>
+      <attribute name="size" value="905" type="Long"/>
       <attribute name="url" value="net.powermatcher.test/net.powermatcher.test-2.0.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="39C99C22C9871DE4FE0FEA1BCE4CBB9A475B3D5B646E21DA42D4B401DF005F76"/>
+      <attribute name="osgi.content" value="10EB1EF7A992248C1D0DB2FE54F9AD85C4E5780F49FB22E8B4BD4DD975CE3695"/>
     </capability>
   </resource>
   <resource>
@@ -304,34 +304,34 @@
       <attribute name="license" value="Apache License, Version 2.0"/>
       <attribute name="osgi.identity" value="net.powermatcher.test.helpers"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.0.0.repoOIST-SNAPSHOT-201809250907" type="Version"/>
+      <attribute name="version" value="1.0.0.repoOIST-SNAPSHOT-201809251321" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.0.0.repoOIST-SNAPSHOT-201809250907" type="Version"/>
+      <attribute name="bundle-version" value="1.0.0.repoOIST-SNAPSHOT-201809251321" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="net.powermatcher.test.helpers"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.0.0.repoOIST-SNAPSHOT-201809250907" type="Version"/>
+      <attribute name="bundle-version" value="1.0.0.repoOIST-SNAPSHOT-201809251321" type="Version"/>
       <attribute name="osgi.wiring.host" value="net.powermatcher.test.helpers"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <directive name="uses" value="javax.measure,javax.measure.quantity,net.powermatcher.api,net.powermatcher.api.data,net.powermatcher.api.messages,net.powermatcher.api.monitoring,net.powermatcher.api.monitoring.events,org.flexiblepower.context"/>
-      <attribute name="version" value="2.0.0.201809250907" type="Version"/>
+      <attribute name="version" value="2.0.0.201809251321" type="Version"/>
       <attribute name="osgi.wiring.package" value="net.powermatcher.mock"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <directive name="uses" value="net.powermatcher.api,net.powermatcher.api.data,net.powermatcher.api.messages,net.powermatcher.api.monitoring,net.powermatcher.api.monitoring.events,net.powermatcher.mock"/>
-      <attribute name="version" value="2.0.0.201809250907" type="Version"/>
+      <attribute name="version" value="2.0.0.201809251321" type="Version"/>
       <attribute name="osgi.wiring.package" value="net.powermatcher.test.helpers"/>
     </capability>
     <capability namespace="osgi.service">
       <attribute name="objectClass" value="net.powermatcher.api.monitoring.AgentObserver" type="List&lt;String&gt;"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="35278" type="Long"/>
+      <attribute name="size" value="35166" type="Long"/>
       <attribute name="url" value="net.powermatcher.test.helpers/net.powermatcher.test.helpers-1.0.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="A396642B906ED06BD8E500ED957B8FE6CD1C65144D107EED92F3D5986B174AAA"/>
+      <attribute name="osgi.content" value="F1859491D4CDF4BDA16C2B756CF747F4AEA43F19BCB83262BE0599BA721C8015"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=javax.measure)(&amp;(version&gt;=5.0.0)(!(version&gt;=6.0.0))))"/>
@@ -384,21 +384,21 @@
       <attribute name="license" value="Apache License, Version 2.0"/>
       <attribute name="osgi.identity" value="net.powermatcher.monitoring.csv"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="2.0.2.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="version" value="2.0.2.repoOIST-SNAPSHOT-201809251321" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="2.0.2.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="bundle-version" value="2.0.2.repoOIST-SNAPSHOT-201809251321" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="net.powermatcher.monitoring.csv"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="2.0.2.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="bundle-version" value="2.0.2.repoOIST-SNAPSHOT-201809251321" type="Version"/>
       <attribute name="osgi.wiring.host" value="net.powermatcher.monitoring.csv"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="28511" type="Long"/>
+      <attribute name="size" value="28806" type="Long"/>
       <attribute name="url" value="net.powermatcher.monitoring.csv/net.powermatcher.monitoring.csv-2.0.2.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="97C212C386CEE6BC1558754EB036C6368D2365120E69E58709AC3C551080EC0D"/>
+      <attribute name="osgi.content" value="F350CEE024389D9E6D2FFC12E301ADA964F201459B0B5A6E54B4DB16EBB6A25C"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=net.powermatcher.api.data)(&amp;(version&gt;=3.0.0)(!(version&gt;=4.0.0))))"/>
@@ -433,24 +433,24 @@
       <attribute name="license" value="Apache License, Version 2.0"/>
       <attribute name="osgi.identity" value="net.powermatcher.runtime"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="2.0.1.repoOIST-SNAPSHOT-201809250907" type="Version"/>
+      <attribute name="version" value="2.0.1.repoOIST-SNAPSHOT-201809251321" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809250907" type="Version"/>
+      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809251321" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="net.powermatcher.runtime"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809250907" type="Version"/>
+      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809251321" type="Version"/>
       <attribute name="osgi.wiring.host" value="net.powermatcher.runtime"/>
     </capability>
     <capability namespace="flexiblepower.context">
       <attribute name="runtime" value="powermatcher"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="21593" type="Long"/>
+      <attribute name="size" value="21488" type="Long"/>
       <attribute name="url" value="net.powermatcher.runtime/net.powermatcher.runtime-2.0.1.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="BE84EC278C1C87D52F5096504BE5A9557BE062842FADDCACBD99E213E5EB9DB5"/>
+      <attribute name="osgi.content" value="FE153480077AD90454C4B03EE61B193F678375444F1973362A1F4E6DC47465C3"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=javax.measure)(&amp;(version&gt;=5.0.0)(!(version&gt;=6.0.0))))"/>
@@ -500,34 +500,34 @@
       <attribute name="license" value="Apache License, Version 2.0"/>
       <attribute name="osgi.identity" value="net.powermatcher.core"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="3.0.0.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="version" value="3.0.0.repoOIST-SNAPSHOT-201809251321" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="3.0.0.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="bundle-version" value="3.0.0.repoOIST-SNAPSHOT-201809251321" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="net.powermatcher.core"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="3.0.0.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="bundle-version" value="3.0.0.repoOIST-SNAPSHOT-201809251321" type="Version"/>
       <attribute name="osgi.wiring.host" value="net.powermatcher.core"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <directive name="uses" value="net.powermatcher.api,net.powermatcher.api.data,net.powermatcher.api.messages,net.powermatcher.api.monitoring,net.powermatcher.api.monitoring.events,net.powermatcher.core.bidcache,org.flexiblepower.context,org.slf4j"/>
-      <attribute name="version" value="2.0.0.201809250908" type="Version"/>
+      <attribute name="version" value="2.0.0.201809251321" type="Version"/>
       <attribute name="osgi.wiring.package" value="net.powermatcher.core"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <directive name="uses" value="net.powermatcher.api,net.powermatcher.core,net.powermatcher.core.bidcache"/>
-      <attribute name="version" value="2.0.0.201809250908" type="Version"/>
+      <attribute name="version" value="2.0.0.201809251321" type="Version"/>
       <attribute name="osgi.wiring.package" value="net.powermatcher.core.auctioneer"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <directive name="uses" value="net.powermatcher.api.data,net.powermatcher.api.messages"/>
-      <attribute name="version" value="3.0.0.201809250908" type="Version"/>
+      <attribute name="version" value="3.0.0.201809251321" type="Version"/>
       <attribute name="osgi.wiring.package" value="net.powermatcher.core.bidcache"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <directive name="uses" value="javax.measure,javax.measure.quantity,net.powermatcher.api,net.powermatcher.api.data,net.powermatcher.api.messages,net.powermatcher.api.monitoring,net.powermatcher.core,net.powermatcher.core.bidcache,org.flexiblepower.context"/>
-      <attribute name="version" value="2.1.0.201809250908" type="Version"/>
+      <attribute name="version" value="2.1.0.201809251321" type="Version"/>
       <attribute name="osgi.wiring.package" value="net.powermatcher.core.concentrator"/>
     </capability>
     <capability namespace="osgi.wiring.package">
@@ -541,10 +541,10 @@
       <attribute name="objectClass" value="net.powermatcher.api.MatcherEndpoint,net.powermatcher.api.monitoring.ObservableAgent" type="List&lt;String&gt;"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="52285" type="Long"/>
+      <attribute name="size" value="52223" type="Long"/>
       <attribute name="url" value="net.powermatcher.core/net.powermatcher.core-3.0.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="3637A58F867538CDEE056A2353325D3A78BBE3C9A5EE2ABAF9ECD558FCDA227D"/>
+      <attribute name="osgi.content" value="EA8ABF074F83618368C2AEC8FCAD264914AA50E9689B3FDA25C46B0BA4AF703F"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=javax.measure)(&amp;(version&gt;=5.0.0)(!(version&gt;=6.0.0))))"/>
@@ -591,24 +591,24 @@
       <attribute name="license" value="Apache License, Version 2.0"/>
       <attribute name="osgi.identity" value="net.powermatcher.visualisation"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="2.0.1.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="version" value="2.0.1.repoOIST-SNAPSHOT-201809251322" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809251322" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="net.powermatcher.visualisation"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="bundle-version" value="2.0.1.repoOIST-SNAPSHOT-201809251322" type="Version"/>
       <attribute name="osgi.wiring.host" value="net.powermatcher.visualisation"/>
     </capability>
     <capability namespace="osgi.service">
       <attribute name="objectClass" value="javax.servlet.Servlet" type="List&lt;String&gt;"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="162628" type="Long"/>
+      <attribute name="size" value="162492" type="Long"/>
       <attribute name="url" value="net.powermatcher.visualisation/net.powermatcher.visualisation-2.0.1.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="EC95EDD7979EBE4B928116659A33BF81BC0CBCFD904321AA28451BC203850C23"/>
+      <attribute name="osgi.content" value="46E8D3474A9DF6EB81E8E451F996D132FA27671BA0E4DE7A7D1C3DDE6F00EEEB"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.gson)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))"/>
@@ -647,14 +647,14 @@
       <attribute name="license" value="Apache License, Version 2.0"/>
       <attribute name="osgi.identity" value="net.powermatcher.remote.websockets.server"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="2.1.0.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="version" value="2.1.0.repoOIST-SNAPSHOT-201809251321" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="2.1.0.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="bundle-version" value="2.1.0.repoOIST-SNAPSHOT-201809251321" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="net.powermatcher.remote.websockets.server"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="2.1.0.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="bundle-version" value="2.1.0.repoOIST-SNAPSHOT-201809251321" type="Version"/>
       <attribute name="osgi.wiring.host" value="net.powermatcher.remote.websockets.server"/>
     </capability>
     <capability namespace="osgi.wiring.package">
@@ -675,10 +675,10 @@
       <attribute name="objectClass" value="javax.servlet.Servlet" type="List&lt;String&gt;"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="36168" type="Long"/>
+      <attribute name="size" value="35983" type="Long"/>
       <attribute name="url" value="net.powermatcher.remote.websockets.server/net.powermatcher.remote.websockets.server-2.1.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="2541E271F8D6A321F2E18B9F1EAA0302B9A97D6DDE7B4219797F99A981C18BB3"/>
+      <attribute name="osgi.content" value="48C874C87DDF2BC0A3515A96787067879ACC37294C3D8C59BC4D86CEC8FCA5BD"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.gson)(&amp;(version&gt;=2.8.0)(!(version&gt;=3.0.0))))"/>
@@ -728,21 +728,21 @@
       <attribute name="license" value="Apache License, Version 2.0"/>
       <attribute name="osgi.identity" value="net.powermatcher.test.osgi"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="2.0.0.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="version" value="2.0.0.repoOIST-SNAPSHOT-201809251321" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="2.0.0.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="bundle-version" value="2.0.0.repoOIST-SNAPSHOT-201809251321" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="net.powermatcher.test.osgi"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="2.0.0.repoOIST-SNAPSHOT-201809250908" type="Version"/>
+      <attribute name="bundle-version" value="2.0.0.repoOIST-SNAPSHOT-201809251321" type="Version"/>
       <attribute name="osgi.wiring.host" value="net.powermatcher.test.osgi"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="30876" type="Long"/>
+      <attribute name="size" value="30681" type="Long"/>
       <attribute name="url" value="net.powermatcher.test.osgi/net.powermatcher.test.osgi-2.0.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="A155AB8A4A2A6ACB1DFC1DA5A1F33CAFA76150575077AA7ECE41D3328CCC2E6C"/>
+      <attribute name="osgi.content" value="0D42AB285C61928D443C1258D19F1D80DC93AB356722524AE73F0D2F2BD46E8F"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=junit.framework)(&amp;(version&gt;=3.8.0)(!(version&gt;=4.0.0))))"/>
